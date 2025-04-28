@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.auth-box {
+  width: 25cm; /* 25cm wide */
+  height: 20cm; /* 20cm tall */
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the content horizontally */
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 500px; /* Set max width for responsiveness */
+}
+
+/* Auth Box Title */
+.auth-box h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #1f2937;
+}
+
+/* Auth Box Input */
+.auth-box input {
+  width: 80%; /* Adjust the width to be smaller, centered */
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Auth Box Button */
+.auth-box button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 80%; /* Same width as inputs */
+}
+
+.auth-box button:hover {
+  background-color: #1e40af;
+}
+
+/* Switch between login/signup */
+.switch {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.switch span {
+  color: #2563eb;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Error Message */
+.error-msg {
+  margin-top: 0.6rem;
+  color: #dc2626;
+  font-size: 0.85rem;
+}
+
+/* Prediction Box for Phishing Detection */
+.main-container {
+  width: 30cm; /* 30cm wide */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 150px;
+  resize: none;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+/* Prediction Result */
+.prediction {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.prediction.red {
+  color: #dc2626;
+}
+
+.prediction.green {
+  color: #16a34a;
+}
+
+
